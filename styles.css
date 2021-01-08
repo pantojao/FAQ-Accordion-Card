@@ -1,0 +1,97 @@
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Kumbh Sans;
+}
+
+p {
+  font-size: 14px;
+}
+.card {
+  max-width: 14em;
+  margin: 1em auto 0em auto;
+  padding: 1.2em;
+  border-radius: 1em;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 24px 15px 0 rgba(0, 0, 0, 0.2),
+    0 20px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-img {
+  position: absolute;
+  top: -17%;
+  left: 6%;
+  z-index: 100;
+}
+
+.header {
+  margin-top: 2.5em;
+  text-align: center;
+}
+
+.make-bold {
+  font-weight: 700;
+}
+
+.answer {
+  margin-top: 0em;
+}
+
+.drop {
+  display: column;
+  align-items: center;
+  margin-bottom: 1em;
+  border-bottom: hsl(240, 5%, 91%) 2.5px solid;
+}
+
+.initial {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-down {
+  margin-left: auto;
+  width: 0.6em;
+}
+
+@media only screen and (min-width: 950px) {
+  .main-img {
+    content: url("./images/illustration-woman-online-desktop.svg");
+    top: 9%;
+    left: -6%;
+  }
+  .box {
+    position: absolute;
+    content: url("./images/illustration-box-desktop.svg");
+    top: 36%;
+    z-index: 100;
+    left: -6%;
+  }
+
+  .card {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 950px !important;
+    margin-top: -2em;
+  }
+  .main-content {
+    margin-right: 3em;
+  }
+
+  .header {
+    margin: 1em 0;
+    text-align: left;
+  }
+  .drop {
+    display: column;
+    align-items: center;
+    margin-bottom: 1em;
+    width: 20em;
+    border-bottom: hsl(240, 5%, 91%) 2.5px solid;
+  }
+}
